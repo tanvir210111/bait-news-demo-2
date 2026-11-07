@@ -225,32 +225,8 @@
         </div>
     </div>
 
-    <!-- Breaking News Ticker & Search -->
-    <div class="row" style="margin-top: 10px; margin-bottom: 12px;">
-        <div class="col-md-9 col-sm-8 col-xs-12">
-            <div class="top_scrool clearfix"> 
-                <div class="col-md-2 col-sm-3 col-xs-4 scrool_1">
-                    <i class="fa fa-bolt"></i> সংবাদ শিরোনাম
-                </div>
-                <div class="col-md-10 col-sm-9 col-xs-8 scrool_2">
-                    <marquee direction="left" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
-                        <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/575.html">শাপলার জায়গায় দৃঢ় রয়েছি, অবশ্যই অর্জন করব: হাসনাত আবদুল্লাহ</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/574.html">জুলাই সনদ স্বাক্ষরকারীরাও সেই কলম পেতে পারেন</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/573.html">পিআর নিয়ে জামায়াতের আন্দোলন রাজনৈতিক প্রতারণা ছাড়া আর কিছু নয়: নাহিদ</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/572.html">Jamaat&#x27;s PR movement is nothing but political fraud: Nahid</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/570.html">Mirza Fakhrul holds meeting with BNP candidates for Sylhet division in Gulshan</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/569.html">Advisor Farida wants direct voting for reserved women&#x27;s seats in the next election</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/568.html">No one has a &#x27;safe exit&#x27; anymore</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/567.html">The responsibility for burning the establishment was placed on the protesters.</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/566.html">New trick for job seekers to fool ChatGP</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/565.html">Uranus&#x27; moon had a deep ocean</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/564.html">Google&#x27;s five Nobel laureates: Sundar Pichai proud of colleagues&#x27; achievements</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/563.html">Bangladeshi startup OneBrain AI at OpenAI DevDay in the US</a>
-                    </marquee>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="search-box">
-                <form class="example" method="get" action="/search.html">
-                    <input type="text" maxlength="64" placeholder="অনুসন্ধান করুন..." name="q" required />
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Navigation Bar -->
-    <div class="row">
+    <!-- Main Navigation Bar (সংবাদ শিরোনাম সরানো হয়েছে) -->
+    <div class="row" style="margin-top: 10px;">
         <div class="col-xs-12 col-md-12 col-sm-12">
             <div id="menu-area" class="menu_area">
                 <div class="menu_bottom">
@@ -329,6 +305,14 @@
     </li>
     
                             </ul>
+                            <form class="navbar-form navbar-right" method="get" action="/search.html" style="margin-top: 6px; margin-bottom: 6px; padding-right: 15px;">
+                                <div class="input-group" style="width: 200px;">
+                                    <input type="text" class="form-control input-sm" name="q" placeholder="অনুসন্ধান করুন..." required style="border-radius: 3px 0 0 3px; font-size: 13px;">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-sm btn-danger" type="submit" style="border-radius: 0 3px 3px 0; background: #bd0d0d; border-color: #bd0d0d;"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
                         </div>
                     </nav>
                 </div>
