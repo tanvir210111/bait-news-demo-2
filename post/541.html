@@ -370,6 +370,9 @@
     </div>
     
             
+    <!-- Reading Progress Bar -->
+    <div id="readProgressBar" style="position: fixed; top: 0; left: 0; height: 4px; background: #bd0d0d; width: 0%; z-index: 9999; transition: width 0.1s;"></div>
+
     <!-- Breadcrumb -->
     <div style="margin-top: 15px; margin-bottom: 15px; font-size: 14px; color: #666; background: #fff; padding: 10px 15px; border-radius: 4px; border: 1px solid #eee;">
         <a href="/" style="color: #bd0d0d;"><i class="fa fa-home"></i> প্রচ্ছদ</a> 
@@ -383,8 +386,18 @@
         <!-- Main Article Body -->
         <div class="col-md-8 col-sm-8 col-xs-12">
             <article class="single-article" style="background: #fff; border: 1px solid #ebebeb; padding: 25px; border-radius: 4px;">
-                <span class="badge-cat" style="font-size: 13px; padding: 4px 10px;">National</span>
-                <h1 style="font-size: 26px; line-height: 1.45; font-weight: bold; margin: 10px 0 15px; color: #111;">World Egg Day is being celebrated across the country with various events</h1>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <span class="badge-cat" style="font-size: 13px; padding: 4px 10px;">National</span>
+                    <!-- Font Size Controls -->
+                    <div style="font-size: 13px; color: #666; display: flex; align-items: center; gap: 6px;">
+                        <span>ফন্ট সাইজ:</span>
+                        <button onclick="changeFontSize(-1)" class="btn btn-default btn-xs" title="ফন্ট ছোট করুন" style="font-weight: bold; padding: 1px 7px;">অ-</button>
+                        <button onclick="changeFontSize(0)" class="btn btn-default btn-xs" title="স্বাভাবিক সাইজ" style="padding: 1px 7px;">স্বাভাবিক</button>
+                        <button onclick="changeFontSize(1)" class="btn btn-default btn-xs" title="ফন্ট বড় করুন" style="font-weight: bold; padding: 1px 7px;">অ+</button>
+                    </div>
+                </div>
+
+                <h1 style="font-size: 26px; line-height: 1.45; font-weight: bold; margin: 12px 0 15px; color: #111;">World Egg Day is being celebrated across the country with various events</h1>
                 
                 <!-- Reporter & Meta Info -->
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 10px 0; margin-bottom: 20px; font-size: 13px; color: #666;">
@@ -427,8 +440,8 @@
                     </button>
                 </div>
 
-                <!-- Article Content -->
-                <div class="single-article-content">
+                <!-- Article Content with ID for dynamic resizing -->
+                <div id="articleBodyContent" class="single-article-content">
                     <div><span style="font-size: 14px;">Protein is one of the essential elements in the global food system. In this regard, eggs are said to be the most readily available, affordable and nutritious source. The importance of eggs in the good health of mankind, child growth and brain development is immense. The International Egg Commission (IEC), a UK-based international organization, was formed in 1964 to establish eggs as a high-quality and easily available non-vegetarian food in the world. Currently, the number of members of this organization is 80. The organization organized the first 'World Egg Day' in Vienna, the capital of Austria, in 1996 with the aim of meeting the demand for animal protein, building a healthy and talented nation and above all, increasing public awareness about the quality of eggs, which has since been celebrated worldwide on the second Friday of October every year. In continuation of this, World Egg Day is being celebrated in Bangladesh today. This year, the theme of World Egg Day is 'Strong Eggs - Full of Natural Nutrition' - the Department of Livestock, Bangladesh Poultry Industries Central Council (BPICC) and WAPSA-BBI are jointly celebrating World Egg Day-2025. The main objective of celebrating World Egg Day is to make people around the world aware of the nutritional value of eggs, highlight the role of eggs in providing high-quality protein and essential nutrients at an affordable price, and create public awareness about the need to include eggs in the diet of people of all ages and classes.</span></div><div><span style="font-size: 14px;"><br></span></div><div><span style="font-size: 14px;">Eggs are a delicious and easily available food, which is considered a complete food. It contains 13 essential nutrients for our body. Eggs are one of the most affordable animal proteins. Eggs are called 'poor people's protein'. Again, its place among sustainable animal proteins is at the top of all. That is why it is also called 'nutrient pill'. The high-quality protein, vitamins, minerals and amino acids in eggs play an essential role in the balanced development of the body. It not only increases immunity, but also helps in increasing brain function and attention. Therefore, including eggs in the daily diet means ensuring an easily available and natural source of nutrition.</span></div><div><span style="font-size: 14px;"><br></span></div><div><span style="font-size: 14px;">Currently, the rate of malnutrition, maternal and neonatal mortality rates have decreased in Bangladesh. The number of stunted and underweight children under the age of five has also decreased. On the contrary, the average life expectancy of people has increased. 30-40 years ago, the number of eggs consumed per capita in our country was only 10 to 15 per year on average. According to the Department of Livestock, this number is currently 137. About 66.8 million eggs are produced daily in the country. By 2031, the target of egg consumption has been set at 165 per person per year.</span></div>
                 </div>
 
@@ -444,9 +457,7 @@
                         </div>
                         <button type="button" onclick="submitComment(541)" class="btn btn-danger btn-sm" style="border-radius: 3px; font-weight: bold;">মন্তব্য প্রকাশ করুন</button>
                     </div>
-                    <div id="commentsList" style="margin-top: 15px;">
-                        <!-- Client-side comments saved in localStorage -->
-                    </div>
+                    <div id="commentsList" style="margin-top: 15px;"></div>
                 </div>
             </article>
 
@@ -577,31 +588,31 @@
         
                 </div>
             </div>
-
-            <!-- Online Poll Widget in Sidebar -->
-            <div class="poll-area" style="margin-top: 20px;">
-                <h4><i class="fa fa-pie-chart"></i> অনলাইন জরিপ</h4>
-                <p style="font-size: 14px; font-weight: bold; color: #111;">বাংলাদেশে আওয়ামীলীগ আবার পুনর্বাসিত হোক আপনি চান?</p>
-                <div id="poll-form-23">
-                    <div class="radio"><label><input type="radio" name="p_choice" value="0" checked> হ্যাঁ চাই</label></div>
-                    <div class="radio"><label><input type="radio" name="p_choice" value="1"> না চাইনা</label></div>
-                    <button type="button" class="btn btn-danger btn-sm" onclick="submitVote(23, parseInt(document.querySelector('input[name=p_choice]:checked').value))">
-                        <i class="fa fa-check"></i> মতামত দিন
-                    </button>
-                </div>
-                <div id="poll-result-23" style="display: none; margin-top: 10px;">
-                    <div class="alert alert-success" style="padding: 5px 8px; font-size: 12px;">মতামত গৃহীত হয়েছে!</div>
-                    <div style="font-size: 12px;">হ্যাঁ চাই:</div>
-                    <div class="poll-bar" style="display: block;"><div id="bar-0-23" class="poll-progress" style="width: 74%;">74%</div></div>
-                    <div style="font-size: 12px; margin-top: 6px;">না চাইনা:</div>
-                    <div class="poll-bar" style="display: block;"><div id="bar-1-23" class="poll-progress" style="width: 26%; background: #e74c3c;">26%</div></div>
-                </div>
-            </div>
         </div>
     </div>
 
-    <!-- Client-side comments persistence script -->
+    <!-- Client-side Scripts: Comments & Font Resizer & Reading Progress -->
     <script>
+    var currentFontSize = 17;
+    function changeFontSize(direction) {
+        var content = document.getElementById('articleBodyContent');
+        if (!content) return;
+        if (direction === 0) currentFontSize = 17;
+        else currentFontSize += (direction * 2);
+        if (currentFontSize < 13) currentFontSize = 13;
+        if (currentFontSize > 25) currentFontSize = 25;
+        content.style.fontSize = currentFontSize + 'px';
+    }
+
+    // Reading Progress Indicator
+    window.addEventListener('scroll', function() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var bar = document.getElementById('readProgressBar');
+        if (bar) bar.style.width = scrolled + '%';
+    });
+
     function loadComments(postId) {
         var list = document.getElementById('commentsList');
         if (!list) return;

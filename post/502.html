@@ -370,6 +370,9 @@
     </div>
     
             
+    <!-- Reading Progress Bar -->
+    <div id="readProgressBar" style="position: fixed; top: 0; left: 0; height: 4px; background: #bd0d0d; width: 0%; z-index: 9999; transition: width 0.1s;"></div>
+
     <!-- Breadcrumb -->
     <div style="margin-top: 15px; margin-bottom: 15px; font-size: 14px; color: #666; background: #fff; padding: 10px 15px; border-radius: 4px; border: 1px solid #eee;">
         <a href="/" style="color: #bd0d0d;"><i class="fa fa-home"></i> প্রচ্ছদ</a> 
@@ -383,8 +386,18 @@
         <!-- Main Article Body -->
         <div class="col-md-8 col-sm-8 col-xs-12">
             <article class="single-article" style="background: #fff; border: 1px solid #ebebeb; padding: 25px; border-radius: 4px;">
-                <span class="badge-cat" style="font-size: 13px; padding: 4px 10px;">চাকরি</span>
-                <h1 style="font-size: 26px; line-height: 1.45; font-weight: bold; margin: 10px 0 15px; color: #111;">সোনালী-অগ্রণী-কৃষি-রূপালীসহ ১১ ব্যাংক নেবে সিনিয়র অফিসার, পদ ১০১৭</h1>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <span class="badge-cat" style="font-size: 13px; padding: 4px 10px;">চাকরি</span>
+                    <!-- Font Size Controls -->
+                    <div style="font-size: 13px; color: #666; display: flex; align-items: center; gap: 6px;">
+                        <span>ফন্ট সাইজ:</span>
+                        <button onclick="changeFontSize(-1)" class="btn btn-default btn-xs" title="ফন্ট ছোট করুন" style="font-weight: bold; padding: 1px 7px;">অ-</button>
+                        <button onclick="changeFontSize(0)" class="btn btn-default btn-xs" title="স্বাভাবিক সাইজ" style="padding: 1px 7px;">স্বাভাবিক</button>
+                        <button onclick="changeFontSize(1)" class="btn btn-default btn-xs" title="ফন্ট বড় করুন" style="font-weight: bold; padding: 1px 7px;">অ+</button>
+                    </div>
+                </div>
+
+                <h1 style="font-size: 26px; line-height: 1.45; font-weight: bold; margin: 12px 0 15px; color: #111;">সোনালী-অগ্রণী-কৃষি-রূপালীসহ ১১ ব্যাংক নেবে সিনিয়র অফিসার, পদ ১০১৭</h1>
                 
                 <!-- Reporter & Meta Info -->
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 10px 0; margin-bottom: 20px; font-size: 13px; color: #666;">
@@ -427,8 +440,8 @@
                     </button>
                 </div>
 
-                <!-- Article Content -->
-                <div class="single-article-content">
+                <!-- Article Content with ID for dynamic resizing -->
+                <div id="articleBodyContent" class="single-article-content">
                     <div>ব্যাংকার্স সিলেকশন কমিটির তত্ত্বাবধানে সমন্বিত ব্যাংক নিয়োগ বিজ্ঞপ্তি ২০২৫ প্রকাশ করা হয়েছে। ৯টি ব্যাংক ও ২টি আর্থিক প্রতিষ্ঠানে সিনিয়র অফিসার (সাধারণ) পদে জনবল নিয়োগে এ বিজ্ঞপ্তি প্রকাশ করা হয়েছে। ৯টি ব্যাংক ও ২টি আর্থিক প্রতিষ্ঠানে ১ হাজার ১৭ জনকে নিয়োগ দেওয়া হবে। আগ্রহী ও যোগ্য প্রার্থীরা সিনিয়র অফিসারের (সাধারণ) এসব পদে আবেদন করতে পারবেন।</div><div>পদের বিবরণ</div><div>পদের নাম: সিনিয়র অফিসার (সাধারণ)</div><div>পদ সংখ্যা: ১০১৭টি</div><div>বেতন স্কেল: ২২০০০–৫৩০৬০ টাকা। নিয়ম অনুযায়ী প্রদেয় অন্যান্য সুবিধা</div><div>ব্যাংকের নাম ও পদ সংখ্যা</div><div>১. সোনালী ব্যাংক পিএলসি—১১৮টি</div><div>২. অগ্রণী ব্যাংক পিএলসি ২০০টি</div><div>৩. রূপালী ব্যাংক পিএলসি ৭৫টি</div><div>৪. বাংলাদেশ ডেভেলপমেন্ট ব্যাংক পিএলসি ২১টি</div><div>৫. বাংলাদেশ কৃষি ব্যাংক ৩৯৮টি</div><div>৬. রাজশাহী কৃষি উন্নয়ন ব্যাংক ৬টি</div><div>৭. কর্মসংস্থান ব্যাংক ১৮টি</div><div>৮. প্রবাসী কল্যাণ ব্যাংক ৩৭টি</div><div>৯. পল্লী সঞ্চয় বাংক ১১৪টি</div><div>১০. বাংলাদেশ হাউস বিল্ডিং ফাইন্যান্স করপোরেশন ১৫টি</div><div>১১. ইনভেস্টমেন্ট করপোরেশন অব বাংলাদেশ ১৫টি।</div><div><br></div>
                 </div>
 
@@ -444,9 +457,7 @@
                         </div>
                         <button type="button" onclick="submitComment(502)" class="btn btn-danger btn-sm" style="border-radius: 3px; font-weight: bold;">মন্তব্য প্রকাশ করুন</button>
                     </div>
-                    <div id="commentsList" style="margin-top: 15px;">
-                        <!-- Client-side comments saved in localStorage -->
-                    </div>
+                    <div id="commentsList" style="margin-top: 15px;"></div>
                 </div>
             </article>
 
@@ -577,31 +588,31 @@
         
                 </div>
             </div>
-
-            <!-- Online Poll Widget in Sidebar -->
-            <div class="poll-area" style="margin-top: 20px;">
-                <h4><i class="fa fa-pie-chart"></i> অনলাইন জরিপ</h4>
-                <p style="font-size: 14px; font-weight: bold; color: #111;">বাংলাদেশে আওয়ামীলীগ আবার পুনর্বাসিত হোক আপনি চান?</p>
-                <div id="poll-form-23">
-                    <div class="radio"><label><input type="radio" name="p_choice" value="0" checked> হ্যাঁ চাই</label></div>
-                    <div class="radio"><label><input type="radio" name="p_choice" value="1"> না চাইনা</label></div>
-                    <button type="button" class="btn btn-danger btn-sm" onclick="submitVote(23, parseInt(document.querySelector('input[name=p_choice]:checked').value))">
-                        <i class="fa fa-check"></i> মতামত দিন
-                    </button>
-                </div>
-                <div id="poll-result-23" style="display: none; margin-top: 10px;">
-                    <div class="alert alert-success" style="padding: 5px 8px; font-size: 12px;">মতামত গৃহীত হয়েছে!</div>
-                    <div style="font-size: 12px;">হ্যাঁ চাই:</div>
-                    <div class="poll-bar" style="display: block;"><div id="bar-0-23" class="poll-progress" style="width: 74%;">74%</div></div>
-                    <div style="font-size: 12px; margin-top: 6px;">না চাইনা:</div>
-                    <div class="poll-bar" style="display: block;"><div id="bar-1-23" class="poll-progress" style="width: 26%; background: #e74c3c;">26%</div></div>
-                </div>
-            </div>
         </div>
     </div>
 
-    <!-- Client-side comments persistence script -->
+    <!-- Client-side Scripts: Comments & Font Resizer & Reading Progress -->
     <script>
+    var currentFontSize = 17;
+    function changeFontSize(direction) {
+        var content = document.getElementById('articleBodyContent');
+        if (!content) return;
+        if (direction === 0) currentFontSize = 17;
+        else currentFontSize += (direction * 2);
+        if (currentFontSize < 13) currentFontSize = 13;
+        if (currentFontSize > 25) currentFontSize = 25;
+        content.style.fontSize = currentFontSize + 'px';
+    }
+
+    // Reading Progress Indicator
+    window.addEventListener('scroll', function() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        var bar = document.getElementById('readProgressBar');
+        if (bar) bar.style.width = scrolled + '%';
+    });
+
     function loadComments(postId) {
         var list = document.getElementById('commentsList');
         if (!list) return;
