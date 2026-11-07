@@ -45,6 +45,62 @@
         .header-section, .logobanner-section {
             width: 100% !important;
         }
+        /* MENUBAR & SEARCH EXACT ALIGNMENT */
+        .menu_area .mainmenu {
+            margin-bottom: 0 !important;
+            min-height: 42px !important;
+            border: none !important;
+        }
+        .menu_area .navbar-nav > li > a {
+            height: 42px !important;
+            line-height: 20px !important;
+            padding: 11px 9px !important;
+            display: inline-block !important;
+            box-sizing: border-box !important;
+        }
+        .navbar-search-form {
+            margin: 0 !important;
+            padding: 0 15px 0 0 !important;
+            height: 42px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+        }
+        .navbar-search-form .input-group {
+            width: 220px !important;
+            height: 42px !important;
+            display: flex !important;
+        }
+        .navbar-search-form .form-control {
+            height: 42px !important;
+            border-radius: 3px 0 0 3px !important;
+            border: 1px solid #ddd !important;
+            border-right: none !important;
+            font-size: 13px !important;
+            box-shadow: none !important;
+            padding: 8px 12px !important;
+            box-sizing: border-box !important;
+        }
+        .navbar-search-form .input-group-btn {
+            height: 42px !important;
+            display: flex !important;
+        }
+        .navbar-search-form .btn {
+            height: 42px !important;
+            border-radius: 0 3px 3px 0 !important;
+            background: #bd0d0d !important;
+            border: 1px solid #bd0d0d !important;
+            padding: 0 16px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: #fff !important;
+            box-sizing: border-box !important;
+        }
+        /* BIGGOPTI & MENU SPACING */
+        .scrool {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
         .category-title {
             background: linear-gradient(135deg, #b71c1c, #d32f2f);
             color: #ffffff;
@@ -222,11 +278,11 @@
     </div>
 
     <!-- Main Navigation Bar -->
-    <div class="row" style="margin-top: 30px; margin-bottom: 15px;">
+    <div class="row" style="margin-top: 20px; margin-bottom: 0;">
         <div class="col-xs-12 col-md-12 col-sm-12">
-            <div id="menu-area" class="menu_area">
-                <div class="menu_bottom">
-                    <nav role="navigation" class="navbar navbar-default mainmenu">
+            <div id="menu-area" class="menu_area" style="margin-bottom: 0;">
+                <div class="menu_bottom" style="margin-bottom: 0;">
+                    <nav role="navigation" class="navbar navbar-default mainmenu" style="margin-bottom: 0 !important; border: none; min-height: 42px;">
                         <div class="navbar-header">
                             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                                 <span class="sr-only">Toggle navigation</span>
@@ -236,8 +292,8 @@
                             </button>
                             <span class="navbar-brand visible-xs"><i class="fa fa-bars"></i> মেনু</span>
                         </div>
-                        <div id="navbarCollapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav">
+                        <div id="navbarCollapse" class="collapse navbar-collapse" style="padding: 0;">
+                            <ul class="nav navbar-nav" style="margin: 0;">
                                 
         <li class="menu-item ">
             <a href="/"><i class="fa fa-home"></i> প্রচ্ছদ</a>
@@ -301,11 +357,11 @@
     </li>
     
                             </ul>
-                            <form class="navbar-form navbar-right" method="get" action="/search.html" style="margin-top: 6px; margin-bottom: 6px; padding-right: 15px;">
-                                <div class="input-group" style="width: 200px;">
-                                    <input type="text" class="form-control input-sm" name="q" placeholder="অনুসন্ধান করুন..." required style="border-radius: 3px 0 0 3px; font-size: 13px;">
+                            <form class="navbar-search-form navbar-right hidden-xs" method="get" action="/search.html">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="q" placeholder="অনুসন্ধান করুন..." required>
                                     <span class="input-group-btn">
-                                        <button class="btn btn-sm btn-danger" type="submit" style="border-radius: 0 3px 3px 0; background: #bd0d0d; border-color: #bd0d0d;"><i class="fa fa-search"></i></button>
+                                        <button class="btn btn-danger" type="submit"><i class="fa fa-search"></i></button>
                                     </span>
                                 </div>
                             </form>
@@ -316,9 +372,9 @@
         </div>
     </div>
 
-    <!-- Notice Ticker -->
-    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-        <div class="col-md-12 scrool">
+    <!-- Notice Ticker (বিজ্ঞপ্তি) -->
+    <div class="row" style="margin-top: 8px; margin-bottom: 12px;">
+        <div class="col-md-12 scrool" style="margin-top: 0 !important; margin-bottom: 0 !important;">
             <div class="scrool_1" style="width: auto; padding: 6px 15px; display: inline-block; background: #c0392b; color: #fff; font-weight: bold;">
                 <i class="fa fa-bullhorn"></i> বিজ্ঞপ্তি :
             </div>
