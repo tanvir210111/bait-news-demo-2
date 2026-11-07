@@ -45,7 +45,7 @@
             border: 1px solid #ebebeb;
             padding: 10px;
             background: #fff;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             border-radius: 4px;
             transition: transform 0.2s, box-shadow 0.2s;
         }
@@ -61,12 +61,12 @@
         }
         .hadding_02 a {
             color: #111;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             line-height: 1.4;
             text-decoration: none;
             display: block;
-            margin-top: 8px;
+            margin-top: 6px;
         }
         .hadding_02 a:hover {
             color: #b71c1c;
@@ -143,6 +143,46 @@
         }
         .single-article-content p {
             margin-bottom: 16px;
+        }
+        .developer-credit {
+            display: flex;
+            align-items: center;       
+            justify-content: flex-end; 
+            gap: 8px;                  
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+        }
+        .developer-credit .credit-label {
+            color: #ffffff !important;
+            font-weight: bold;
+            font-size: 16px;
+            text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+        }
+        .developer-credit .dev-company {
+            display: flex;
+            align-items: center;       
+            text-decoration: none;     
+            gap: 6px;                  
+        }
+        .developer-credit .dev-company img {
+            height: 26px;
+            width: auto;
+            vertical-align: middle;
+        }
+        .developer-credit .company-name {
+            color: #ffcc00 !important;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1;            
+        }
+        .developer-credit .dev-company:hover .company-name {
+            text-decoration: underline; 
+            color: #ffffff !important;  
+        }
+        @media (max-width: 767px) {
+            .developer-credit {
+                justify-content: center;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -353,41 +393,48 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </section>
     
-    <!-- Footer Section -->
-    <div class="footer-section" style="background: #002244; color: #ffffff; padding: 35px 0 20px; margin-top: 40px; border-top: 4px solid #bd0d0d;">
+    <!--======= Footer Section Start ============-->
+    <div class="footer-section" style="background: #002244; color: #ffffff; padding: 30px 0 15px; margin-top: 40px; border-top: 4px solid #bd0d0d; font-family: 'SolaimanLipi', Arial, sans-serif;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="footer-about">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 8px; display: inline-block;">সংবাদ ৭১</h4>
-                        <p style="color: #ccc; margin-top: 10px; font-size: 14px; line-height: 1.7;">
-                            সংবাদ ৭১ বাংলাদেশের একটি শীর্ষস্থানীয় ডিজিটাল সংবাদমাধ্যম। সত্য, বস্তুনিষ্ঠ ও নিরপেক্ষ সংবাদ পরিবেশনে আমরা অঙ্গীকারবদ্ধ।
-                        </p>
-                        <p style="color: #eee; font-size: 13px;">
-                            <i class="fa fa-map-marker"></i> <font size="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmid tempor incididunt ut labore et dolore magna aliqua.</font>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-3 col-xs-6">
+            <!-- Footer Menus Grid -->
+            <div class="row" style="margin-bottom: 25px;">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 8px;">বিভাগসমূহ</h4>
-                        <ul style="list-style: none; padding-left: 0; line-height: 2;">
+                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">জাতীয় ও রাজনীতি</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
                             <li><a href="/category/national.html" style="color: #ddd;">জাতীয়</a></li>
                             <li><a href="/category/politics.html" style="color: #ddd;">রাজনীতি</a></li>
                             <li><a href="/category/internatonal.html" style="color: #ddd;">আন্তর্জাতিক</a></li>
-                            <li><a href="/category/sports.html" style="color: #ddd;">খেলাধুলা</a></li>
-                            <li><a href="/category/entertainment.html" style="color: #ddd;">বিনোদন</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-3 col-xs-6">
+                <div class="col-md-2 col-sm-4 col-xs-6">
                     <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 8px;">অন্যান্য</h4>
-                        <ul style="list-style: none; padding-left: 0; line-height: 2;">
-                            <li><a href="/category/ict.html" style="color: #ddd;">তথ্যপ্রযুক্তি</a></li>
+                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">শিক্ষা ও তারুণ্য</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
+                            <li><a href="/category/campus.html" style="color: #ddd;">ক্যাম্পাস</a></li>
+                            <li><a href="/category/ict.html" style="color: #ddd;">তথ্য প্রযুক্তি</a></li>
                             <li><a href="/category/job.html" style="color: #ddd;">চাকরি</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="footer-menu-01">
+                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">খেলা ও বিনোদন</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
+                            <li><a href="/category/sports.html" style="color: #ddd;">খেলাধুলা</a></li>
+                            <li><a href="/category/entertainment.html" style="color: #ddd;">বিনোদন</a></li>
+                            <li><a href="/category/media.html" style="color: #ddd;">মিডিয়া</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="footer-menu-01">
+                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">মিডিয়া ও গ্যালারি</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
                             <li><a href="/photo.html" style="color: #ddd;">ফটো গ্যালারি</a></li>
                             <li><a href="/video.html" style="color: #ddd;">ভিডিও গ্যালারি</a></li>
                             <li><a href="/poll.html" style="color: #ddd;">অনলাইন জরিপ</a></li>
@@ -395,42 +442,74 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="footer-social">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 8px;">যুক্ত থাকুন</h4>
-                        <p style="color: #ccc; font-size: 13px;">আমাদের সোশাল মিডিয়া পেজে ফলো করে সর্বশেষ সংবাদের সাথে থাকুন।</p>
-                        <div class="social-icons" style="margin-top: 15px;">
-                            <a href="https://facebook.com" target="_blank" style="display:inline-block; width:36px; height:36px; line-height:36px; text-align:center; background:#3b5998; color:#fff; border-radius:50%; margin-right:6px;"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com" target="_blank" style="display:inline-block; width:36px; height:36px; line-height:36px; text-align:center; background:#1da1f2; color:#fff; border-radius:50%; margin-right:6px;"><i class="fa fa-twitter"></i></a>
-                            <a href="https://youtube.com" target="_blank" style="display:inline-block; width:36px; height:36px; line-height:36px; text-align:center; background:#cd201f; color:#fff; border-radius:50%; margin-right:6px;"><i class="fa fa-youtube-play"></i></a>
-                            <a href="https://instagram.com" target="_blank" style="display:inline-block; width:36px; height:36px; line-height:36px; text-align:center; background:#e4405f; color:#fff; border-radius:50%;"><i class="fa fa-instagram"></i></a>
-                        </div>
-                        <div style="margin-top: 20px;">
-                            <a href="/contact.html" class="btn btn-sm btn-danger" style="border-radius: 4px;"><i class="fa fa-envelope"></i> যোগাযোগ করুন</a>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="footer-menu-01">
+                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">আমাদের পরিবার</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
+                            <li><a href="/reporter.html" style="color: #ddd;">আমাদের রিপোর্টারগণ</a></li>
+                            <li><a href="/contact.html" style="color: #ddd;">যোগাযোগ</a></li>
+                            <li><a href="/category/all.html" style="color: #ddd;">সকল সংবাদ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="footer-menu-last">
+                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">সোশাল মিডিয়া</h4>
+                        <div style="margin-top: 12px; display: flex; gap: 8px;">
+                            <a href="https://facebook.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#3b5998; color:#fff; border-radius:50%;"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#1da1f2; color:#fff; border-radius:50%;"><i class="fa fa-twitter"></i></a>
+                            <a href="https://youtube.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#cd201f; color:#fff; border-radius:50%;"><i class="fa fa-youtube-play"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <hr style="border-color: rgba(255,255,255,0.1); margin: 25px 0 15px;">
-
-            <div class="row align-items-center">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <p style="color: #bbb; margin: 0; font-size: 13px;">Copyright © 2019. All Rights Reserved By GeniusOcean.com</p>
+            <!-- Authentic Office & Contact Addresses -->
+            <div class="footer-wrpp" style="background: rgba(0,0,0,0.25); border-radius: 6px; padding: 18px 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08);">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 10px;">
+                        <div class="footer-content-rihgt" style="font-size: 14px; line-height: 1.7; color: #ececec;">
+                            <strong style="color: #ffcc00; font-size: 15px;"><i class="fa fa-building-o"></i> অফিস ১:</strong> হাউজঃ মুন্সি বাড়ি, নয়ার হাট স্কুল সংলগ্ন, বড়বাড়ি, লালমনির হাট।<br>
+                            <span><i class="fa fa-phone text-warning"></i> মোবাইল: <strong>০১8৪৯৮৩২১৭৮</strong></span> | 
+                            <span><i class="fa fa-envelope text-warning"></i> ইমেইল: info@creativedesign.com.bd</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="footer-content-left" style="font-size: 14px; line-height: 1.7; color: #ececec;">
+                            <strong style="color: #ffcc00; font-size: 15px;"><i class="fa fa-building-o"></i> অফিস ২:</strong> হাউজঃ ৩৫/৩/১-বি, সেকশন-১৩, ঢাকা-১২১৬<br>
+                            <span><i class="fa fa-phone text-warning"></i> মোবাইল: <strong>০১8৪৯৮৩২১৭৮</strong></span> | 
+                            <span><i class="fa fa-envelope text-warning"></i> ইমেইল: info@creativedesign.com.bd</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                    <div class="developer-credit">
-                        <span class="credit-label" style="color: #ccc; font-size: 14px;">কারিগরি সহযোগিতায়: </span>
-                        <a href="https://creativedesign.com.bd/" target="_blank" class="dev-company" style="display: inline-flex; align-items: center; color: #fff; text-decoration: none; font-weight: bold;">
-                            <img src="/assets/images/logo/creativedesign.png" alt="Creative Design" style="height: 24px; margin-right: 5px;">
-                            <span class="company-name" style="color: #ffcc00; font-size: 16px;">Creative Design</span>
-                        </a>
+            </div>
+
+            <hr style="border-color: rgba(255,255,255,0.12); margin: 15px 0;">
+
+            <!-- Bottom Copyright & Developer Credit -->
+            <div class="root">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="root_01" style="font-size: 14px; color: #ddd;">
+                            © সকল কিছুর স্বত্বাধিকারঃ <strong>সংবাদ ৭১ বিডি</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                        <div class="developer-credit">
+                            <span class="credit-label">সকল কারিগরী সহযোগিতায়:</span>
+                            <a href="https://www.creativedesign.com.bd/" target="_blank" class="dev-company">
+                                <img src="/assets/images/logo/creativedesign.png" alt="Creative Design">
+                                <span class="company-name">ক্রিয়েটিভ ডিজাইন</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <a href="#" class="scrollToTop" style="position: fixed; bottom: 30px; right: 30px; background: #bd0d0d; color: #fff; width: 40px; height: 40px; text-align: center; line-height: 40px; border-radius: 4px; display: none; z-index: 999;"><i class="fa fa-angle-up"></i></a>
+    <!--======= Footer Section End ============-->
     
 
     <script src="/assets/js/jquery.min0155.js"></script>
