@@ -7,7 +7,7 @@
     <title>Job opportunities for 16 people at Novotheater, application deadline is October 11 - সংবাদ ৭১</title>
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
     
-    <meta name="author" content="Creative Design">
+    <meta name="author" content="Banglar Alo IT">
     
     <meta name="description" content="Applications are being invited for the recruitment of manpower for the vacant posts of the revenue sector of the Novotheater under the Ministry of Science and T">
     <meta property="og:title" content="Job opportunities for 16 people at Novotheater, application deadline is October 11">
@@ -23,16 +23,27 @@
     <link rel="stylesheet" href="/assets/css/responsive0155.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
+    <!-- Custom Full-Width & Portal Styling -->
     <style>
         body {
             font-family: 'SolaimanLipi', sans-serif, Arial;
-            background-color: #f7f9fa;
+            background-color: #f0f2f5;
             color: #222;
+            margin: 0;
+            padding: 0;
         }
-        .main_wbsite {
+        /* FULL PAGE WIDTH FIX */
+        .container.main_wbsite {
+            width: 96% !important;
+            max-width: 1560px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            margin: 0 auto !important;
             background: #ffffff;
-            box-shadow: 0 0 15px rgba(0,0,0,0.06);
-            padding: 15px 25px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+        .header-section, .logobanner-section {
+            width: 100% !important;
         }
         .category-title {
             background: linear-gradient(135deg, #b71c1c, #d32f2f);
@@ -80,7 +91,7 @@
         .poll-area {
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
+            border-radius: 6px;
             padding: 15px;
             margin-bottom: 20px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -90,8 +101,8 @@
             color: #fff;
             padding: 10px 15px;
             margin: -15px -15px 15px -15px;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
             font-size: 16px;
         }
         .poll-bar {
@@ -150,45 +161,11 @@
         .single-article-content p {
             margin-bottom: 16px;
         }
-        .developer-credit {
-            display: flex;
-            align-items: center;       
-            justify-content: flex-end; 
-            gap: 8px;                  
-            font-family: 'SolaimanLipi', Arial, sans-serif;
-        }
-        .developer-credit .credit-label {
-            color: #ffffff !important;
-            font-weight: bold;
-            font-size: 16px;
-            text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
-        }
-        .developer-credit .dev-company {
-            display: flex;
-            align-items: center;       
-            text-decoration: none;     
-            gap: 6px;                  
-        }
-        .developer-credit .dev-company img {
-            height: 26px;
-            width: auto;
-            vertical-align: middle;
-        }
-        .developer-credit .company-name {
-            color: #ffcc00 !important;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 1;            
-        }
-        .developer-credit .dev-company:hover .company-name {
-            text-decoration: underline; 
-            color: #ffffff !important;  
-        }
-        @media (max-width: 767px) {
-            .developer-credit {
-                justify-content: center;
-                margin-top: 10px;
-            }
+        /* Sticky sidebar widget */
+        .sticky-widget {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
         }
     </style>
 </head>
@@ -660,117 +637,69 @@
         </div>
     </section>
     
-    <!--======= Footer Section Start ============-->
-    <div class="footer-section" style="background: #002244; color: #ffffff; padding: 30px 0 15px; margin-top: 40px; border-top: 4px solid #bd0d0d; font-family: 'SolaimanLipi', Arial, sans-serif;">
-        <div class="container">
-            <!-- Footer Menus Grid -->
-            <div class="row" style="margin-bottom: 25px;">
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">জাতীয় ও রাজনীতি</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/category/national.html" style="color: #ddd;">জাতীয়</a></li>
-                            <li><a href="/category/politics.html" style="color: #ddd;">রাজনীতি</a></li>
-                            <li><a href="/category/internatonal.html" style="color: #ddd;">আন্তর্জাতিক</a></li>
-                        </ul>
+    <!--======= Footer Section Start (Matching User Provided Design) ============-->
+    <div class="footer-section" style="background: #181818; color: #ffffff; padding: 35px 0 20px; margin-top: 40px; border-top: 3px solid #ff9900; font-family: 'SolaimanLipi', Arial, sans-serif;">
+        <div class="container" style="width: 96% !important; max-width: 1560px !important;">
+            <div class="row">
+                <!-- Column 1: সম্পাদকীয় -->
+                <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            সম্পাদকীয় :
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="color: #ffffff; font-size: 14px; line-height: 2.1; margin-top: 12px;">
+                            <p style="margin: 0;"><strong>সম্পাদক ও প্রকাশক :</strong> গোলাম মাওলা শাওন</p>
+                            <p style="margin: 0;"><strong>নির্বাহী সম্পাদক :</strong> মোঃ নজরুল ইসলাম</p>
+                            <p style="margin: 0;"><strong>বার্তা সম্পাদক :</strong> মোঃ নাইম হোসেন</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">শিক্ষা ও তারুণ্য</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/category/campus.html" style="color: #ddd;">ক্যাম্পাস</a></li>
-                            <li><a href="/category/ict.html" style="color: #ddd;">তথ্য প্রযুক্তি</a></li>
-                            <li><a href="/category/job.html" style="color: #ddd;">চাকরি</a></li>
-                        </ul>
+                <!-- Column 2: অফিস -->
+                <div class="col-md-5 col-sm-5 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            অফিস :
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="color: #ffffff; font-size: 14px; line-height: 2.1; margin-top: 12px;">
+                            <p style="margin: 0;"><strong>অফিস :</strong> ৩১/১ শরীফ কমপ্লেক্স (৬ষ্ঠ তলা), পুরানা পল্টন, ঢাকা-১০০০, বাংলাদেশ।</p>
+                            <p style="margin: 0;"><strong>ইমেইল :</strong> dainikbarisalerpran@gmail.com</p>
+                            <p style="margin: 0;"><strong>মোবাইল :</strong> +880 1711-006214</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">খেলা ও বিনোদন</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/category/sports.html" style="color: #ddd;">খেলাধুলা</a></li>
-                            <li><a href="/category/entertainment.html" style="color: #ddd;">বিনোদন</a></li>
-                            <li><a href="/category/media.html" style="color: #ddd;">মিডিয়া</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">মিডিয়া ও গ্যালারি</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/photo.html" style="color: #ddd;">ফটো গ্যালারি</a></li>
-                            <li><a href="/video.html" style="color: #ddd;">ভিডিও গ্যালারি</a></li>
-                            <li><a href="/poll.html" style="color: #ddd;">অনলাইন জরিপ</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">আমাদের পরিবার</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/reporter.html" style="color: #ddd;">আমাদের রিপোর্টারগণ</a></li>
-                            <li><a href="/contact.html" style="color: #ddd;">যোগাযোগ</a></li>
-                            <li><a href="/category/all.html" style="color: #ddd;">সকল সংবাদ</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-last">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">সোশাল মিডিয়া</h4>
-                        <div style="margin-top: 12px; display: flex; gap: 8px;">
-                            <a href="https://facebook.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#3b5998; color:#fff; border-radius:50%;"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#1da1f2; color:#fff; border-radius:50%;"><i class="fa fa-twitter"></i></a>
-                            <a href="https://youtube.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#cd201f; color:#fff; border-radius:50%;"><i class="fa fa-youtube-play"></i></a>
+                <!-- Column 3: ফুটার মেনু -->
+                <div class="col-md-3 col-sm-3 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            ফুটার মেনু
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="margin-top: 14px;">
+                            <p style="margin: 0 0 10px;">
+                                <a href="/login.html" style="color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 4px 14px; border-radius: 3px; display: inline-block; background: #222; font-size: 13px;">লগইন</a>
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="/terms.html" style="color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 4px 14px; border-radius: 3px; display: inline-block; background: #222; font-size: 13px;">Terms</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Authentic Office & Contact Addresses -->
-            <div class="footer-wrpp" style="background: rgba(0,0,0,0.25); border-radius: 6px; padding: 18px 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08);">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 10px;">
-                        <div class="footer-content-rihgt" style="font-size: 14px; line-height: 1.7; color: #ececec;">
-                            <strong style="color: #ffcc00; font-size: 15px;"><i class="fa fa-building-o"></i> অফিস ১:</strong> হাউজঃ মুন্সি বাড়ি, নয়ার হাট স্কুল সংলগ্ন, বড়বাড়ি, লালমনির হাট।<br>
-                            <span><i class="fa fa-phone text-warning"></i> মোবাইল: <strong>০১8৪৯৮৩২১৭৮</strong></span> | 
-                            <span><i class="fa fa-envelope text-warning"></i> ইমেইল: info@creativedesign.com.bd</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="footer-content-left" style="font-size: 14px; line-height: 1.7; color: #ececec;">
-                            <strong style="color: #ffcc00; font-size: 15px;"><i class="fa fa-building-o"></i> অফিস ২:</strong> হাউজঃ ৩৫/৩/১-বি, সেকশন-১৩, ঢাকা-১২১৬<br>
-                            <span><i class="fa fa-phone text-warning"></i> মোবাইল: <strong>০১8৪৯৮৩২১৭৮</strong></span> | 
-                            <span><i class="fa fa-envelope text-warning"></i> ইমেইল: info@creativedesign.com.bd</span>
-                        </div>
-                    </div>
+            <!-- Divider Line -->
+            <hr style="border-color: rgba(255,255,255,0.12); margin: 20px 0 15px;">
+
+            <!-- Bottom Row: Copyright & Developer Credit -->
+            <div class="row align-items-center" style="color: #ffffff; font-size: 14px;">
+                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 6px;">
+                    © সকল কিছুর স্বত্বাধিকারঃ <strong>Banglar Alo IT</strong>
                 </div>
-            </div>
-
-            <hr style="border-color: rgba(255,255,255,0.12); margin: 15px 0;">
-
-            <!-- Bottom Copyright & Developer Credit -->
-            <div class="root">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="root_01" style="font-size: 14px; color: #ddd;">
-                            © সকল কিছুর স্বত্বাধিকারঃ <strong>সংবাদ ৭১ বিডি</strong>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                        <div class="developer-credit">
-                            <span class="credit-label">সকল কারিগরী সহযোগিতায়:</span>
-                            <a href="https://www.creativedesign.com.bd/" target="_blank" class="dev-company">
-                                <img src="/assets/images/logo/creativedesign.png" alt="Creative Design">
-                                <span class="company-name">ক্রিয়েটিভ ডিজাইন</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    সকল কারিগরী সহযোগিতায়: <strong>Banglar Alo IT</strong>
                 </div>
             </div>
         </div>

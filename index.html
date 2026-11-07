@@ -7,7 +7,7 @@
     <title>প্রচ্ছদ - সংবাদ ৭১</title>
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
     
-    <meta name="author" content="Creative Design">
+    <meta name="author" content="Banglar Alo IT">
     
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min0155.css">
@@ -17,16 +17,27 @@
     <link rel="stylesheet" href="/assets/css/responsive0155.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
+    <!-- Custom Full-Width & Portal Styling -->
     <style>
         body {
             font-family: 'SolaimanLipi', sans-serif, Arial;
-            background-color: #f7f9fa;
+            background-color: #f0f2f5;
             color: #222;
+            margin: 0;
+            padding: 0;
         }
-        .main_wbsite {
+        /* FULL PAGE WIDTH FIX */
+        .container.main_wbsite {
+            width: 96% !important;
+            max-width: 1560px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            margin: 0 auto !important;
             background: #ffffff;
-            box-shadow: 0 0 15px rgba(0,0,0,0.06);
-            padding: 15px 25px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+        .header-section, .logobanner-section {
+            width: 100% !important;
         }
         .category-title {
             background: linear-gradient(135deg, #b71c1c, #d32f2f);
@@ -74,7 +85,7 @@
         .poll-area {
             background: #ffffff;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
+            border-radius: 6px;
             padding: 15px;
             margin-bottom: 20px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -84,8 +95,8 @@
             color: #fff;
             padding: 10px 15px;
             margin: -15px -15px 15px -15px;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
             font-size: 16px;
         }
         .poll-bar {
@@ -144,45 +155,11 @@
         .single-article-content p {
             margin-bottom: 16px;
         }
-        .developer-credit {
-            display: flex;
-            align-items: center;       
-            justify-content: flex-end; 
-            gap: 8px;                  
-            font-family: 'SolaimanLipi', Arial, sans-serif;
-        }
-        .developer-credit .credit-label {
-            color: #ffffff !important;
-            font-weight: bold;
-            font-size: 16px;
-            text-shadow: 0px 0px 1px rgba(0,0,0,0.3);
-        }
-        .developer-credit .dev-company {
-            display: flex;
-            align-items: center;       
-            text-decoration: none;     
-            gap: 6px;                  
-        }
-        .developer-credit .dev-company img {
-            height: 26px;
-            width: auto;
-            vertical-align: middle;
-        }
-        .developer-credit .company-name {
-            color: #ffcc00 !important;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 1;            
-        }
-        .developer-credit .dev-company:hover .company-name {
-            text-decoration: underline; 
-            color: #ffffff !important;  
-        }
-        @media (max-width: 767px) {
-            .developer-credit {
-                justify-content: center;
-                margin-top: 10px;
-            }
+        /* Sticky sidebar widget */
+        .sticky-widget {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
         }
     </style>
 </head>
@@ -608,11 +585,11 @@
     </div>
 </div>
 
-<!-- Main Content Grid + Sidebar -->
+<!-- Main Content Grid + Complete Sidebar -->
 <div class="row">
     <!-- Left Column: Categories -->
     <div class="col-md-8 col-sm-8 col-xs-12">
-        <!-- জাতীয় (National) - Full width in 8-col -->
+        <!-- জাতীয় (National) -->
         
     <div class="category-block" style="margin-top: 25px;">
         <div class="category-title d-flex justify-content-between align-items-center">
@@ -680,7 +657,7 @@
     </div>
     
 
-        <!-- রাজনীতি (Politics) - Full width in 8-col -->
+        <!-- রাজনীতি (Politics) -->
         
     <div class="category-block" style="margin-top: 25px;">
         <div class="category-title d-flex justify-content-between align-items-center">
@@ -773,7 +750,7 @@
             </div>
         </div>
 
-        <!-- ক্যাম্পাস & বিনোদন Two-Column Section (Proper half-width layout, NO squeezing!) -->
+        <!-- ক্যাম্পাস & বিনোদন Two-Column Section -->
         <div class="row" style="margin-top: 10px;">
             <div class="col-md-6 col-sm-6 col-xs-12">
                 
@@ -954,7 +931,7 @@
     </div>
     
 
-        <!-- তথ্য প্রযুক্তি & খেলাধুলা Two-Column Section (Proper half-width layout, NO squeezing!) -->
+        <!-- তথ্য প্রযুক্তি & খেলাধুলা Two-Column Section -->
         <div class="row" style="margin-top: 10px;">
             <div class="col-md-6 col-sm-6 col-xs-12">
                 
@@ -1147,9 +1124,9 @@
     
     </div>
 
-    <!-- Right Column: Sidebar Widgets -->
+    <!-- Right Column: Rich Sidebar (FULLY POPULATED, NO EMPTY GAP!) -->
     <div class="col-md-4 col-sm-4 col-xs-12" style="margin-top: 25px;">
-        <!-- Online Poll Widget -->
+        <!-- Widget 1: Online Poll -->
         <div class="poll-area">
             <h4><i class="fa fa-pie-chart"></i> অনলাইন জরিপ</h4>
             <p style="font-size: 14px; font-weight: 600; color: #111;">বাংলাদেশে আওয়ামীলীগ আবার পুনর্বাসিত হোক আপনি চান?</p>
@@ -1188,64 +1165,190 @@
             </div>
         </div>
 
-        <!-- Sidebar Vertical Ad -->
+        <!-- Widget 2: Sidebar Vertical Ad -->
         <div style="margin-bottom: 25px; text-align: center;">
             <a href="/" target="_blank">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJzjUlrsCObpKCcZVhpveAxQXG5s1Nv7C8mxpmZWdgluDF6z5m3aAF7Mth6ycqS-3igAJ7ABRrK4VmPyyb_bqiTyaZqxJEHQ-crCcbbSHF_4NkwF5x96RBTkVdIHroZ1coRw2GqKkuBcdVlxTg7Emga-xb7hX3ZXz035N6v-2P3tLwe8lJRpEucwXHO_zV/s500/vertical.gif" alt="Sidebar Ad" class="img-responsive center-block" style="border-radius: 4px; max-width: 100%;">
             </a>
         </div>
 
-        <!-- Facebook Like Box Widget -->
-        <div class="imagr-border" style="padding: 15px; margin-bottom: 25px;">
-            <h4 style="border-bottom: 2px solid #3b5998; padding-bottom: 8px; font-size: 16px; color: #3b5998;">
-                <i class="fa fa-facebook-square"></i> ফেসবুকে আমরা
-            </h4>
-            <div style="background: #f0f2f5; padding: 15px; text-align: center; border-radius: 4px;">
-                <h5 style="margin: 0 0 10px; font-weight: bold;">সংবাদ ৭১ - Sangbad 71</h5>
-                <p style="font-size: 12px; color: #666;">সর্বশেষ খবরের জন্য আমাদের অফিসিয়াল ফেসবুক পেজ লাইক দিন।</p>
-                <a href="https://facebook.com" target="_blank" class="btn btn-primary btn-sm" style="background: #3b5998; border: none;">
-                    <i class="fa fa-thumbs-up"></i> Follow Page
-                </a>
-            </div>
-        </div>
-
-        <!-- Popular News Widget -->
-        <div class="imagr-border" style="padding: 15px;">
-            <h4 style="border-bottom: 2px solid #bd0d0d; padding-bottom: 8px; font-size: 16px;">
-                <i class="fa fa-line-chart text-danger"></i> সর্বাধিক পঠিত
+        <!-- Widget 3: Popular News (Top 10 Most Read) -->
+        <div class="imagr-border" style="padding: 15px; margin-bottom: 20px;">
+            <h4 style="border-bottom: 2px solid #bd0d0d; padding-bottom: 8px; font-size: 16px; margin-top: 0;">
+                <i class="fa fa-line-chart text-danger"></i> সর্বাধিক পঠিত সংবাদ
             </h4>
             <div style="margin-top: 10px;">
                 
-                <div class="tab-border" style="display: flex; gap: 8px; align-items: center;">
-                    <span style="font-size: 18px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px;">১</span>
-                    <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/560.html" style="color: #222; text-decoration: none;">Israeli cabinet approves Gaza ceasefire deal</a></h5>
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">১</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/563.html" style="color: #222; text-decoration: none;">Bangladeshi startup OneBrain AI at OpenAI DevDay in the US</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">২</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/562.html" style="color: #222; text-decoration: none;">US to deploy 200 troops to Gaza</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৩</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/561.html" style="color: #222; text-decoration: none;">A flower garden in the heart of the desert</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৪</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/560.html" style="color: #222; text-decoration: none;">Israeli cabinet approves Gaza ceasefire deal</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৫</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/559.html" style="color: #222; text-decoration: none;">What will be the future of Gaza after the ceasefire, and how many challenges lie ahead?</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৬</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/558.html" style="color: #222; text-decoration: none;">Who wrote the news—human or AI, how does that change credibility?</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৭</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/557.html" style="color: #222; text-decoration: none;">Prothom Alo wins two categories in the World&#x27;s Best One-Ifra</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৮</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/556.html" style="color: #222; text-decoration: none;">Journalist Ruhul Amin Gazi will be a symbol of protest</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">৯</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/555.html" style="color: #222; text-decoration: none;">There will be no restrictions on media in national elections: Information Advisor</a></h5>
+    </div>
+    
+    <div class="tab-border" style="display: flex; gap: 10px; align-items: center; padding: 6px 0;">
+        <span style="font-size: 16px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px; text-align: center;">১০</span>
+        <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/554.html" style="color: #222; text-decoration: none;">Recruitment for various grades including 10th at Rice Research Institute, 49 posts</a></h5>
+    </div>
+    
+            </div>
+        </div>
+
+        <!-- Widget 4: Islamic Prayer Times & Weather -->
+        <div class="imagr-border" style="padding: 15px; margin-bottom: 20px; background: linear-gradient(135deg, #0b3c5d, #1d2731); color: #fff;">
+            <h4 style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; font-size: 15px; margin-top: 0; color: #ffcc00;">
+                <i class="fa fa-moon-o"></i> নামাজের সময়সূচী (ঢাকা ও পার্শ্ববর্তী এলাকা)
+            </h4>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; text-align: center; font-size: 12px;">
+                <div style="background: rgba(255,255,255,0.1); padding: 6px; border-radius: 4px;">
+                    <div>ফজর</div><strong style="color: #ffcc00; font-size: 13px;">৪:৫৬</strong>
                 </div>
-                
-                <div class="tab-border" style="display: flex; gap: 8px; align-items: center;">
-                    <span style="font-size: 18px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px;">২</span>
-                    <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/559.html" style="color: #222; text-decoration: none;">What will be the future of Gaza after the ceasefire, and how many challenges lie ahead?</a></h5>
+                <div style="background: rgba(255,255,255,0.1); padding: 6px; border-radius: 4px;">
+                    <div>যোহর</div><strong style="color: #ffcc00; font-size: 13px;">১২:০২</strong>
                 </div>
-                
-                <div class="tab-border" style="display: flex; gap: 8px; align-items: center;">
-                    <span style="font-size: 18px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px;">৩</span>
-                    <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/558.html" style="color: #222; text-decoration: none;">Who wrote the news—human or AI, how does that change credibility?</a></h5>
+                <div style="background: rgba(255,255,255,0.1); padding: 6px; border-radius: 4px;">
+                    <div>আসর</div><strong style="color: #ffcc00; font-size: 13px;">৪:১০</strong>
                 </div>
-                
-                <div class="tab-border" style="display: flex; gap: 8px; align-items: center;">
-                    <span style="font-size: 18px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px;">৪</span>
-                    <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/557.html" style="color: #222; text-decoration: none;">Prothom Alo wins two categories in the World&#x27;s Best One-Ifra</a></h5>
+                <div style="background: rgba(255,255,255,0.1); padding: 6px; border-radius: 4px;">
+                    <div>মাগরিব</div><strong style="color: #ffcc00; font-size: 13px;">৫:১৮</strong>
                 </div>
-                
-                <div class="tab-border" style="display: flex; gap: 8px; align-items: center;">
-                    <span style="font-size: 18px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px;">৫</span>
-                    <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/556.html" style="color: #222; text-decoration: none;">Journalist Ruhul Amin Gazi will be a symbol of protest</a></h5>
+                <div style="background: rgba(255,255,255,0.1); padding: 6px; border-radius: 4px;">
+                    <div>এশা</div><strong style="color: #ffcc00; font-size: 13px;">৬:৩৩</strong>
                 </div>
-                
-                <div class="tab-border" style="display: flex; gap: 8px; align-items: center;">
-                    <span style="font-size: 18px; font-weight: bold; color: #bd0d0d; flex: 0 0 25px;">৬</span>
-                    <h5 style="margin: 0; font-size: 13px; line-height: 1.4;"><a href="/post/555.html" style="color: #222; text-decoration: none;">There will be no restrictions on media in national elections: Information Advisor</a></h5>
+                <div style="background: rgba(255,255,255,0.1); padding: 6px; border-radius: 4px;">
+                    <div>সূর্যোদয়</div><strong style="color: #ffcc00; font-size: 13px;">৬:১২</strong>
                 </div>
-                
+            </div>
+        </div>
+
+        <!-- Widget 5: e-Paper Edition -->
+        <div class="imagr-border" style="padding: 15px; margin-bottom: 20px; text-align: center;">
+            <h4 style="border-bottom: 2px solid #bd0d0d; padding-bottom: 8px; font-size: 16px; margin-top: 0; text-align: left;">
+                <i class="fa fa-newspaper-o text-danger"></i> আজকের ই-পেপার
+            </h4>
+            <div style="margin: 12px 0;">
+                <img src="/assets/images/logo/175982267517371368531726830883Screenshot_1.jpg" alt="ePaper" style="width: 100%; height: 160px; object-fit: cover; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+            </div>
+            <a href="/" target="_blank" class="btn btn-danger btn-block btn-sm" style="font-weight: bold; border-radius: 3px;">
+                <i class="fa fa-eye"></i> ই-পেপার পড়ুন
+            </a>
+        </div>
+
+        <!-- Widget 6: Sticky Trending Highlights (Follows scrolling down!) -->
+        <div class="sticky-widget">
+            <div class="imagr-border" style="padding: 15px; margin-bottom: 20px;">
+                <h4 style="border-bottom: 2px solid #bd0d0d; padding-bottom: 8px; font-size: 16px; margin-top: 0;">
+                    <i class="fa fa-fire text-danger"></i> আরও আলোচিত খবর
+                </h4>
+                <div>
+                    
+    <div class="imagr-border" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 6px;">
+        <div style="flex: 0 0 75px;">
+            <a href="/post/553.html"><img src="/assets/images/post/1760086155zXAJxRqz.jpg" alt="Check out the top 10 government jobs this week (October 3 to 9)." style="width: 75px; height: 55px; object-fit: cover; border-radius: 3px;"></a>
+        </div>
+        <div style="flex: 1;">
+            <h5 style="margin: 0; font-size: 13px; line-height: 1.35;"><a href="/post/553.html" style="color: #222; text-decoration: none;">Check out the top 10 government jobs this week (October 3 to 9).</a></h5>
+        </div>
+    </div>
+    
+    <div class="imagr-border" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 6px;">
+        <div style="flex: 0 0 75px;">
+            <a href="/post/552.html"><img src="/assets/images/post/1760086068XKErgFAs.jpg" alt="Job opportunities for 16 people at Novotheater, application deadline is October 11" style="width: 75px; height: 55px; object-fit: cover; border-radius: 3px;"></a>
+        </div>
+        <div style="flex: 1;">
+            <h5 style="margin: 0; font-size: 13px; line-height: 1.35;"><a href="/post/552.html" style="color: #222; text-decoration: none;">Job opportunities for 16 people at Novotheater, application deadline is October 11</a></h5>
+        </div>
+    </div>
+    
+    <div class="imagr-border" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 6px;">
+        <div style="flex: 0 0 75px;">
+            <a href="/post/551.html"><img src="/assets/images/post/1760085996rUh0Ifr7.jpg" alt="11 banks including Sonali-Agrani-Krishi-Rupali will recruit senior officers, 1017 posts" style="width: 75px; height: 55px; object-fit: cover; border-radius: 3px;"></a>
+        </div>
+        <div style="flex: 1;">
+            <h5 style="margin: 0; font-size: 13px; line-height: 1.35;"><a href="/post/551.html" style="color: #222; text-decoration: none;">11 banks including Sonali-Agrani-Krishi-Rupali will recruit senior officers, 1017 posts</a></h5>
+        </div>
+    </div>
+    
+    <div class="imagr-border" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 6px;">
+        <div style="flex: 0 0 75px;">
+            <a href="/post/550.html"><img src="/assets/images/post/1760085441AAnnwzwh.jpg" alt="96th BMA course in Bangladesh Army, who has the opportunity to apply" style="width: 75px; height: 55px; object-fit: cover; border-radius: 3px;"></a>
+        </div>
+        <div style="flex: 1;">
+            <h5 style="margin: 0; font-size: 13px; line-height: 1.35;"><a href="/post/550.html" style="color: #222; text-decoration: none;">96th BMA course in Bangladesh Army, who has the opportunity to apply</a></h5>
+        </div>
+    </div>
+    
+    <div class="imagr-border" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 6px;">
+        <div style="flex: 0 0 75px;">
+            <a href="/post/549.html"><img src="/assets/images/post/1760085370VIrGIiZd.jpg" alt="Allegations of voice grabbing, case against owner" style="width: 75px; height: 55px; object-fit: cover; border-radius: 3px;"></a>
+        </div>
+        <div style="flex: 1;">
+            <h5 style="margin: 0; font-size: 13px; line-height: 1.35;"><a href="/post/549.html" style="color: #222; text-decoration: none;">Allegations of voice grabbing, case against owner</a></h5>
+        </div>
+    </div>
+    
+    <div class="imagr-border" style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 6px;">
+        <div style="flex: 0 0 75px;">
+            <a href="/post/548.html"><img src="/assets/images/post/17600852928aLWj0pQ.jpg" alt="Is it possible to build a career in communications in the future?" style="width: 75px; height: 55px; object-fit: cover; border-radius: 3px;"></a>
+        </div>
+        <div style="flex: 1;">
+            <h5 style="margin: 0; font-size: 13px; line-height: 1.35;"><a href="/post/548.html" style="color: #222; text-decoration: none;">Is it possible to build a career in communications in the future?</a></h5>
+        </div>
+    </div>
+    
+                </div>
+            </div>
+
+            <!-- Widget 7: Facebook Follow Box -->
+            <div class="imagr-border" style="padding: 15px; background: #fff;">
+                <h4 style="border-bottom: 2px solid #3b5998; padding-bottom: 8px; font-size: 16px; color: #3b5998; margin-top: 0;">
+                    <i class="fa fa-facebook-square"></i> ফেসবুকে যুক্ত থাকুন
+                </h4>
+                <div style="background: #f0f2f5; padding: 12px; text-align: center; border-radius: 4px; margin-top: 10px;">
+                    <h5 style="margin: 0 0 8px; font-weight: bold; color: #111;">সংবাদ ৭১ - Sangbad 71</h5>
+                    <p style="font-size: 12px; color: #666; margin-bottom: 10px;">লাইক দিয়ে সর্বশেষ খবরের সাথে যুক্ত থাকুন</p>
+                    <a href="https://facebook.com" target="_blank" class="btn btn-primary btn-sm btn-block" style="background: #3b5998; border: none; font-weight: bold;">
+                        <i class="fa fa-thumbs-up"></i> Follow Page
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -1397,117 +1500,69 @@ function filterLocalNews() {
         </div>
     </section>
     
-    <!--======= Footer Section Start ============-->
-    <div class="footer-section" style="background: #002244; color: #ffffff; padding: 30px 0 15px; margin-top: 40px; border-top: 4px solid #bd0d0d; font-family: 'SolaimanLipi', Arial, sans-serif;">
-        <div class="container">
-            <!-- Footer Menus Grid -->
-            <div class="row" style="margin-bottom: 25px;">
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">জাতীয় ও রাজনীতি</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/category/national.html" style="color: #ddd;">জাতীয়</a></li>
-                            <li><a href="/category/politics.html" style="color: #ddd;">রাজনীতি</a></li>
-                            <li><a href="/category/internatonal.html" style="color: #ddd;">আন্তর্জাতিক</a></li>
-                        </ul>
+    <!--======= Footer Section Start (Matching User Provided Design) ============-->
+    <div class="footer-section" style="background: #181818; color: #ffffff; padding: 35px 0 20px; margin-top: 40px; border-top: 3px solid #ff9900; font-family: 'SolaimanLipi', Arial, sans-serif;">
+        <div class="container" style="width: 96% !important; max-width: 1560px !important;">
+            <div class="row">
+                <!-- Column 1: সম্পাদকীয় -->
+                <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            সম্পাদকীয় :
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="color: #ffffff; font-size: 14px; line-height: 2.1; margin-top: 12px;">
+                            <p style="margin: 0;"><strong>সম্পাদক ও প্রকাশক :</strong> গোলাম মাওলা শাওন</p>
+                            <p style="margin: 0;"><strong>নির্বাহী সম্পাদক :</strong> মোঃ নজরুল ইসলাম</p>
+                            <p style="margin: 0;"><strong>বার্তা সম্পাদক :</strong> মোঃ নাইম হোসেন</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">শিক্ষা ও তারুণ্য</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/category/campus.html" style="color: #ddd;">ক্যাম্পাস</a></li>
-                            <li><a href="/category/ict.html" style="color: #ddd;">তথ্য প্রযুক্তি</a></li>
-                            <li><a href="/category/job.html" style="color: #ddd;">চাকরি</a></li>
-                        </ul>
+                <!-- Column 2: অফিস -->
+                <div class="col-md-5 col-sm-5 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            অফিস :
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="color: #ffffff; font-size: 14px; line-height: 2.1; margin-top: 12px;">
+                            <p style="margin: 0;"><strong>অফিস :</strong> ৩১/১ শরীফ কমপ্লেক্স (৬ষ্ঠ তলা), পুরানা পল্টন, ঢাকা-১০০০, বাংলাদেশ।</p>
+                            <p style="margin: 0;"><strong>ইমেইল :</strong> dainikbarisalerpran@gmail.com</p>
+                            <p style="margin: 0;"><strong>মোবাইল :</strong> +880 1711-006214</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">খেলা ও বিনোদন</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/category/sports.html" style="color: #ddd;">খেলাধুলা</a></li>
-                            <li><a href="/category/entertainment.html" style="color: #ddd;">বিনোদন</a></li>
-                            <li><a href="/category/media.html" style="color: #ddd;">মিডিয়া</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">মিডিয়া ও গ্যালারি</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/photo.html" style="color: #ddd;">ফটো গ্যালারি</a></li>
-                            <li><a href="/video.html" style="color: #ddd;">ভিডিও গ্যালারি</a></li>
-                            <li><a href="/poll.html" style="color: #ddd;">অনলাইন জরিপ</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-01">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">আমাদের পরিবার</h4>
-                        <ul style="list-style: none; padding: 0; margin-top: 10px; line-height: 2;">
-                            <li><a href="/reporter.html" style="color: #ddd;">আমাদের রিপোর্টারগণ</a></li>
-                            <li><a href="/contact.html" style="color: #ddd;">যোগাযোগ</a></li>
-                            <li><a href="/category/all.html" style="color: #ddd;">সকল সংবাদ</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                    <div class="footer-menu-last">
-                        <h4 style="color: #fff; border-bottom: 2px solid #bd0d0d; padding-bottom: 6px; font-size: 16px;">সোশাল মিডিয়া</h4>
-                        <div style="margin-top: 12px; display: flex; gap: 8px;">
-                            <a href="https://facebook.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#3b5998; color:#fff; border-radius:50%;"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#1da1f2; color:#fff; border-radius:50%;"><i class="fa fa-twitter"></i></a>
-                            <a href="https://youtube.com" target="_blank" style="display:inline-block; width:34px; height:34px; line-height:34px; text-align:center; background:#cd201f; color:#fff; border-radius:50%;"><i class="fa fa-youtube-play"></i></a>
+                <!-- Column 3: ফুটার মেনু -->
+                <div class="col-md-3 col-sm-3 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            ফুটার মেনু
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="margin-top: 14px;">
+                            <p style="margin: 0 0 10px;">
+                                <a href="/login.html" style="color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 4px 14px; border-radius: 3px; display: inline-block; background: #222; font-size: 13px;">লগইন</a>
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="/terms.html" style="color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 4px 14px; border-radius: 3px; display: inline-block; background: #222; font-size: 13px;">Terms</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Authentic Office & Contact Addresses -->
-            <div class="footer-wrpp" style="background: rgba(0,0,0,0.25); border-radius: 6px; padding: 18px 20px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08);">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 10px;">
-                        <div class="footer-content-rihgt" style="font-size: 14px; line-height: 1.7; color: #ececec;">
-                            <strong style="color: #ffcc00; font-size: 15px;"><i class="fa fa-building-o"></i> অফিস ১:</strong> হাউজঃ মুন্সি বাড়ি, নয়ার হাট স্কুল সংলগ্ন, বড়বাড়ি, লালমনির হাট।<br>
-                            <span><i class="fa fa-phone text-warning"></i> মোবাইল: <strong>০১8৪৯৮৩২১৭৮</strong></span> | 
-                            <span><i class="fa fa-envelope text-warning"></i> ইমেইল: info@creativedesign.com.bd</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="footer-content-left" style="font-size: 14px; line-height: 1.7; color: #ececec;">
-                            <strong style="color: #ffcc00; font-size: 15px;"><i class="fa fa-building-o"></i> অফিস ২:</strong> হাউজঃ ৩৫/৩/১-বি, সেকশন-১৩, ঢাকা-১২১৬<br>
-                            <span><i class="fa fa-phone text-warning"></i> মোবাইল: <strong>০১8৪৯৮৩২১৭৮</strong></span> | 
-                            <span><i class="fa fa-envelope text-warning"></i> ইমেইল: info@creativedesign.com.bd</span>
-                        </div>
-                    </div>
+            <!-- Divider Line -->
+            <hr style="border-color: rgba(255,255,255,0.12); margin: 20px 0 15px;">
+
+            <!-- Bottom Row: Copyright & Developer Credit -->
+            <div class="row align-items-center" style="color: #ffffff; font-size: 14px;">
+                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 6px;">
+                    © সকল কিছুর স্বত্বাধিকারঃ <strong>Banglar Alo IT</strong>
                 </div>
-            </div>
-
-            <hr style="border-color: rgba(255,255,255,0.12); margin: 15px 0;">
-
-            <!-- Bottom Copyright & Developer Credit -->
-            <div class="root">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="root_01" style="font-size: 14px; color: #ddd;">
-                            © সকল কিছুর স্বত্বাধিকারঃ <strong>সংবাদ ৭১ বিডি</strong>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
-                        <div class="developer-credit">
-                            <span class="credit-label">সকল কারিগরী সহযোগিতায়:</span>
-                            <a href="https://www.creativedesign.com.bd/" target="_blank" class="dev-company">
-                                <img src="/assets/images/logo/creativedesign.png" alt="Creative Design">
-                                <span class="company-name">ক্রিয়েটিভ ডিজাইন</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    সকল কারিগরী সহযোগিতায়: <strong>Banglar Alo IT</strong>
                 </div>
             </div>
         </div>

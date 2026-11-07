@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>লগইন - সংবাদ ৭১</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    
+    <meta name="author" content="Banglar Alo IT">
+    
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min0155.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min0155.css">
+    <link rel="stylesheet" href="/assets/css/menu0155.css">
+    <link rel="stylesheet" href="/assets/css/archive-style0155.css">
+    <link rel="stylesheet" href="/assets/css/responsive0155.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Custom Full-Width & Portal Styling -->
+    <style>
+        body {
+            font-family: 'SolaimanLipi', sans-serif, Arial;
+            background-color: #f0f2f5;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        /* FULL PAGE WIDTH FIX */
+        .container.main_wbsite {
+            width: 96% !important;
+            max-width: 1560px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            margin: 0 auto !important;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+        .header-section, .logobanner-section {
+            width: 100% !important;
+        }
+        .category-title {
+            background: linear-gradient(135deg, #b71c1c, #d32f2f);
+            color: #ffffff;
+            padding: 8px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-radius: 3px;
+        }
+        .category-title a {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+        .imagr-border {
+            border: 1px solid #ebebeb;
+            padding: 10px;
+            background: #fff;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .imagr-border:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .moddel_image img, .exclisive_news_image img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+            object-fit: cover;
+        }
+        .hadding_02 a {
+            color: #111;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.4;
+            text-decoration: none;
+            display: block;
+            margin-top: 6px;
+        }
+        .hadding_02 a:hover {
+            color: #b71c1c;
+        }
+        .poll-area {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .poll-area h4 {
+            background: #b71c1c;
+            color: #fff;
+            padding: 10px 15px;
+            margin: -15px -15px 15px -15px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            font-size: 16px;
+        }
+        .poll-bar {
+            background: #e2e8f0;
+            border-radius: 4px;
+            height: 18px;
+            overflow: hidden;
+            margin-top: 5px;
+            display: none;
+        }
+        .poll-progress {
+            background: #27ae60;
+            height: 100%;
+            text-align: right;
+            padding-right: 5px;
+            color: #fff;
+            font-size: 11px;
+            line-height: 18px;
+        }
+        .badge-cat {
+            background: #b71c1c;
+            color: #fff;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        .date-badge {
+            color: #777;
+            font-size: 12px;
+        }
+        .news-tabs .nav-tabs > li.active > a {
+            background: #b71c1c;
+            color: #fff !important;
+            font-weight: bold;
+            border-color: #b71c1c;
+        }
+        .news-tabs .nav-tabs > li > a {
+            color: #333;
+            font-weight: 600;
+        }
+        .tab-border {
+            border-bottom: 1px dashed #ddd;
+            padding: 8px 0;
+        }
+        .tab-border:last-child {
+            border-bottom: none;
+        }
+        .single-article-content {
+            font-size: 17px;
+            line-height: 1.85;
+            color: #2b2b2b;
+            margin-top: 20px;
+        }
+        .single-article-content p {
+            margin-bottom: 16px;
+        }
+        /* Sticky sidebar widget */
+        .sticky-widget {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="body-section">
+        <div class="container main_wbsite">
+            
+    <!-- Top Bar -->
+    <div class="header-section">
+        <div class="row align-items-center">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="verson">
+                    <a href="/"><i class="fa fa-newspaper-o" aria-hidden="true"></i> অনলাইন সংস্করণ</a>
+                    <span style="margin: 0 8px; color: #ccc;">|</span>
+                    <a href="/category/all.html"><i class="fa fa-archive"></i> আর্কাইভ</a>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-12 text-center">
+                <div class="date">
+                    <i class="fa fa-calendar"></i> <span id="Clock"></span> | <span id="Date"></span>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 text-right">
+                <div class="top_hdr_social">
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank" class="facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank" class="twitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://youtube.com" target="_blank" class="youtube" title="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="https://instagram.com" target="_blank" class="instagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo & Top Banner -->
+    <div class="logobanner-section">
+        <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/assets/images/logo/175982252017371368861726831078logo.png" alt="সংবাদ ৭১" style="max-height: 80px; width: auto;" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="banner text-right">
+                    <a href="/" target="_blank">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSe0pmVufLWngfz587r2D7dohUbe69gqMLZeZc86t-75TVmMbCQPgc7F9vc86JXH-vx1O3P9UNRfSRJ1AH7-uF_nzrP_MpuSPJOUYVT8djrXYBTHJNGM6u5lOxGDpE-aqoUghqofFB0pAFwPUfepMMOOpqTRAmkh0q75wKkCK1a1FEERfc5VJIIIlrOb7n/s728/horizontal5.jpg" alt="Advertisement" class="img-responsive" style="max-height: 80px; display: inline-block;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breaking News Ticker & Search -->
+    <div class="row" style="margin-top: 10px; margin-bottom: 12px;">
+        <div class="col-md-9 col-sm-8 col-xs-12">
+            <div class="top_scrool clearfix"> 
+                <div class="col-md-2 col-sm-3 col-xs-4 scrool_1">
+                    <i class="fa fa-bolt"></i> সংবাদ শিরোনাম
+                </div>
+                <div class="col-md-10 col-sm-9 col-xs-8 scrool_2">
+                    <marquee direction="left" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
+                        <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/575.html">শাপলার জায়গায় দৃঢ় রয়েছি, অবশ্যই অর্জন করব: হাসনাত আবদুল্লাহ</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/574.html">জুলাই সনদ স্বাক্ষরকারীরাও সেই কলম পেতে পারেন</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/573.html">পিআর নিয়ে জামায়াতের আন্দোলন রাজনৈতিক প্রতারণা ছাড়া আর কিছু নয়: নাহিদ</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/572.html">Jamaat&#x27;s PR movement is nothing but political fraud: Nahid</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/570.html">Mirza Fakhrul holds meeting with BNP candidates for Sylhet division in Gulshan</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/569.html">Advisor Farida wants direct voting for reserved women&#x27;s seats in the next election</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/568.html">No one has a &#x27;safe exit&#x27; anymore</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/567.html">The responsibility for burning the establishment was placed on the protesters.</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/566.html">New trick for job seekers to fool ChatGP</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/565.html">Uranus&#x27; moon had a deep ocean</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/564.html">Google&#x27;s five Nobel laureates: Sundar Pichai proud of colleagues&#x27; achievements</a> &nbsp;&nbsp;&nbsp; <i class="fa fa-square" aria-hidden="true"></i> <a href="/post/563.html">Bangladeshi startup OneBrain AI at OpenAI DevDay in the US</a>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="search-box">
+                <form class="example" method="get" action="/search.html">
+                    <input type="text" maxlength="64" placeholder="অনুসন্ধান করুন..." name="q" required />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-sm-12">
+            <div id="menu-area" class="menu_area">
+                <div class="menu_bottom">
+                    <nav role="navigation" class="navbar navbar-default mainmenu">
+                        <div class="navbar-header">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="navbar-brand visible-xs"><i class="fa fa-bars"></i> মেনু</span>
+                        </div>
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                
+        <li class="menu-item active">
+            <a href="/"><i class="fa fa-home"></i> প্রচ্ছদ</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/national.html">জাতীয়</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/politics.html">রাজনীতি</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/internatonal.html">আন্তর্জাতিক</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/ict.html">তথ্য প্রযুক্তি</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/campus.html">ক্যাম্পাস</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/entertainment.html">বিনোদন</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/sports.html">খেলাধুলা</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/media.html">মিডিয়া</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/category/job.html">চাকরি</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/photo.html">ছবি</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/video.html">ভিডিও</a>
+        </li>
+        
+        <li class="menu-item ">
+            <a href="/poll.html">জরিপ</a>
+        </li>
+        
+    <li class="menu-item dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">আরও <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="/reporter.html"><i class="fa fa-users"></i> আমাদের রিপোর্টারগণ</a></li>
+            <li><a href="/category/all.html"><i class="fa fa-list"></i> সকল সংবাদ</a></li>
+            <li><a href="/contact.html"><i class="fa fa-envelope"></i> যোগাযোগ</a></li>
+        </ul>
+    </li>
+    
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notice Ticker -->
+    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+        <div class="col-md-12 scrool">
+            <div class="scrool_1" style="width: auto; padding: 6px 15px; display: inline-block; background: #c0392b; color: #fff; font-weight: bold;">
+                <i class="fa fa-bullhorn"></i> বিজ্ঞপ্তি :
+            </div>
+            <div class="scrool_2" style="display: inline-block; width: calc(100% - 130px); vertical-align: middle;">
+                <marquee direction="left" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
+                    <i class="fa fa-circle" style="font-size: 8px;"></i> আমাদের ওয়েব সাইটের সার্বিক উন্নয়ন এর কাজ চলছে। কাজ চলাকালীন অবস্থায় , আপনাদের সাময়িকভাবে কিছুটা অসুবিধা হতে পারে এর জন্য আমরা আন্তরিকভাবে দুক্ষিত । আমাদের ওয়েবসাইট উন্নয়নের কাজটি আগামিকাল শেষ হবে। আমাদের সাথে থাকার জন্য ধন্যবাদ।
+                </marquee>
+            </div>
+        </div>
+    </div>
+    
+            
+<!-- Breadcrumb -->
+<div style="margin-top: 15px; margin-bottom: 15px; font-size: 14px; color: #666; background: #fff; padding: 10px 15px; border-radius: 4px; border: 1px solid #eee;">
+    <a href="/" style="color: #bd0d0d;"><i class="fa fa-home"></i> প্রচ্ছদ</a> 
+    <i class="fa fa-angle-right" style="margin: 0 5px;"></i> 
+    <span>লগইন</span>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+        <div style="background: #ffffff; border: 1px solid #e0e0e0; padding: 35px 30px; border-radius: 6px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px; margin-bottom: 40px;">
+            <div class="text-center" style="margin-bottom: 25px;">
+                <h3 style="margin: 0 0 8px; font-weight: bold; color: #111;">সাংবাদিক ও অ্যাডমিন লগইন</h3>
+                <p style="color: #777; font-size: 13px;">আপনার ইউজারনেম ও পাসওয়ার্ড দিয়ে সাইন-ইন করুন</p>
+            </div>
+            <form onsubmit="alert('স্ট্যাটিক ডেমো মোড: সরাসরি ড্যাশবোর্ড অ্যাক্সেস অনুমোদিত!'); window.location.href='/'; return false;">
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-size: 14px; color: #333;"><i class="fa fa-user"></i> ইউজারনেম বা ইমেইল</label>
+                    <input type="text" class="form-control input-lg" placeholder="example@email.com" required style="border-radius: 4px; font-size: 14px;">
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label style="font-size: 14px; color: #333;"><i class="fa fa-lock"></i> পাসওয়ার্ড</label>
+                    <input type="password" class="form-control input-lg" placeholder="••••••••" required style="border-radius: 4px; font-size: 14px;">
+                </div>
+                <div class="checkbox" style="margin-bottom: 20px;">
+                    <label style="font-size: 13px; color: #555;">
+                        <input type="checkbox"> আমাকে মনে রাখুন
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block btn-lg" style="font-weight: bold; border-radius: 4px; background: #bd0d0d; font-size: 16px;">
+                    <i class="fa fa-sign-in"></i> সাইন ইন করুন
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </section>
+    
+    <!--======= Footer Section Start (Matching User Provided Design) ============-->
+    <div class="footer-section" style="background: #181818; color: #ffffff; padding: 35px 0 20px; margin-top: 40px; border-top: 3px solid #ff9900; font-family: 'SolaimanLipi', Arial, sans-serif;">
+        <div class="container" style="width: 96% !important; max-width: 1560px !important;">
+            <div class="row">
+                <!-- Column 1: সম্পাদকীয় -->
+                <div class="col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            সম্পাদকীয় :
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="color: #ffffff; font-size: 14px; line-height: 2.1; margin-top: 12px;">
+                            <p style="margin: 0;"><strong>সম্পাদক ও প্রকাশক :</strong> গোলাম মাওলা শাওন</p>
+                            <p style="margin: 0;"><strong>নির্বাহী সম্পাদক :</strong> মোঃ নজরুল ইসলাম</p>
+                            <p style="margin: 0;"><strong>বার্তা সম্পাদক :</strong> মোঃ নাইম হোসেন</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: অফিস -->
+                <div class="col-md-5 col-sm-5 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            অফিস :
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="color: #ffffff; font-size: 14px; line-height: 2.1; margin-top: 12px;">
+                            <p style="margin: 0;"><strong>অফিস :</strong> ৩১/১ শরীফ কমপ্লেক্স (৬ষ্ঠ তলা), পুরানা পল্টন, ঢাকা-১০০০, বাংলাদেশ।</p>
+                            <p style="margin: 0;"><strong>ইমেইল :</strong> dainikbarisalerpran@gmail.com</p>
+                            <p style="margin: 0;"><strong>মোবাইল :</strong> +880 1711-006214</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: ফুটার মেনু -->
+                <div class="col-md-3 col-sm-3 col-xs-12" style="margin-bottom: 20px;">
+                    <div class="footer-block">
+                        <h4 style="color: #ffffff; font-size: 16px; font-weight: bold; margin-bottom: 8px; position: relative; padding-bottom: 6px;">
+                            ফুটার মেনু
+                            <span style="display: block; width: 50px; height: 3px; background: #ff9900; margin-top: 6px;"></span>
+                        </h4>
+                        <div style="margin-top: 14px;">
+                            <p style="margin: 0 0 10px;">
+                                <a href="/login.html" style="color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 4px 14px; border-radius: 3px; display: inline-block; background: #222; font-size: 13px;">লগইন</a>
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="/terms.html" style="color: #ffffff; text-decoration: none; border: 1px solid #444; padding: 4px 14px; border-radius: 3px; display: inline-block; background: #222; font-size: 13px;">Terms</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider Line -->
+            <hr style="border-color: rgba(255,255,255,0.12); margin: 20px 0 15px;">
+
+            <!-- Bottom Row: Copyright & Developer Credit -->
+            <div class="row align-items-center" style="color: #ffffff; font-size: 14px;">
+                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 6px;">
+                    © সকল কিছুর স্বত্বাধিকারঃ <strong>Banglar Alo IT</strong>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                    সকল কারিগরী সহযোগিতায়: <strong>Banglar Alo IT</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="scrollToTop" style="position: fixed; bottom: 30px; right: 30px; background: #bd0d0d; color: #fff; width: 40px; height: 40px; text-align: center; line-height: 40px; border-radius: 4px; display: none; z-index: 999;"><i class="fa fa-angle-up"></i></a>
+    <!--======= Footer Section End ============-->
+    
+
+    <script src="/assets/js/jquery.min0155.js"></script>
+    <script src="/assets/js/bootstrap.min0155.js"></script>
+    <script src="/assets/js/main0155.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function displayTime() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            var day = date.getDay();
+            var dayMonth = date.getDate();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+            var session = "AM";
+
+            if (hours == 0) { hours = 12; }
+            if (hours > 12) { hours = hours - 12; session = "PM"; }
+
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+            var toBn = n => n.toString().replace(/\d/g, d => "০১২৩৪৫৬৭৮৯"[d]);
+            var days = ["রবিবার", "সোমবার", "মঙ্গলবার", "বুধবার", "বৃহস্পতিবার", "শুক্রবার", "শনিবার"];
+            var months = ["জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন", "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"];
+            var bnSession = session === "PM" ? "পিএম" : "এএম";
+
+            var timeString = toBn(hours) + ":" + toBn(minutes) + ":" + toBn(seconds) + " " + bnSession;
+            var dateString = days[day] + ", " + toBn(dayMonth) + " " + months[month] + " " + toBn(year);
+
+            var clockEl = document.getElementById("Clock");
+            var dateEl = document.getElementById("Date");
+            if (clockEl) clockEl.innerText = timeString;
+            if (dateEl) dateEl.innerText = dateString;
+        }
+        setInterval(displayTime, 1000);
+        displayTime();
+    });
+
+    function submitVote(pollId, optionIndex) {
+        var storageKey = 'voted_poll_' + pollId;
+        if (localStorage.getItem(storageKey)) {
+            alert('আপনি ইতিমধ্যে এই জরিপে ভোট প্রদান করেছেন!');
+            return;
+        }
+        localStorage.setItem(storageKey, optionIndex);
+        showPollResults(pollId, optionIndex);
+    }
+
+    function showPollResults(pollId, chosenIndex) {
+        var resDiv = document.getElementById('poll-result-' + pollId);
+        var formDiv = document.getElementById('poll-form-' + pollId);
+        if (formDiv) formDiv.style.display = 'none';
+        if (resDiv) {
+            resDiv.style.display = 'block';
+            var voteCountYes = 74;
+            var voteCountNo = 26;
+            if (chosenIndex === 0) voteCountYes += 1;
+            else voteCountNo += 1;
+            var total = voteCountYes + voteCountNo;
+            var pYes = Math.round((voteCountYes / total) * 100);
+            var pNo = 100 - pYes;
+            
+            var bar1 = document.getElementById('bar-0-' + pollId);
+            var bar2 = document.getElementById('bar-1-' + pollId);
+            if (bar1) { bar1.style.width = pYes + '%'; bar1.innerText = pYes + '% (' + voteCountYes + ')'; }
+            if (bar2) { bar2.style.width = pNo + '%'; bar2.innerText = pNo + '% (' + voteCountNo + ')'; }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        [23, 24].forEach(function(pid) {
+            var vote = localStorage.getItem('voted_poll_' + pid);
+            if (vote !== null) {
+                showPollResults(pid, parseInt(vote));
+            }
+        });
+    });
+    </script>
+</body>
+</html>
