@@ -1,11 +1,9 @@
 {
   "name": "sangbad71-news-portal",
   "version": "1.0.0",
-  "description": "সংবাদ ৭১ - পূর্ণাঙ্গ স্ট্যাটিক নিউজ পোর্টাল (Ready for Vercel)",
+  "description": "সংবাদ ৭১ - পূর্ণাঙ্গ স্ট্যাটিক নিউজ পোর্টাল",
   "scripts": {
-    "start": "npx serve . -l 3000",
-    "dev": "npx serve . -l 3000",
-    "build": "node -e \"console.log('Build complete. Static assets ready for Vercel.')\""
+    "start": "node server.js"
   },
   "keywords": [
     "news",
@@ -17,4 +15,3 @@
   "author": "Creative Design",
   "license": "ISC"
 }
-
